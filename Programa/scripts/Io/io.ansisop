@@ -1,0 +1,17 @@
+#!/home/utnso/git/tp-2014-1c-alloca2/Programa/Debug/Programa
+
+begin	
+	textPrint MANDO DISCO
+	io Disco 20
+	textPrint TERMINO DISCO
+textPrint MANDO impresora
+	io impresora 20
+	textPrint TERMINO impresora
+textPrint MANDO Scanner
+	io Scanner 20
+	textPrint TERMINO Scanner
+textPrint MANDO Escaner
+	io escaner 20
+	textPrint TERMINO Escaner
+
+end

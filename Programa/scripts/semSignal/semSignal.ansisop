@@ -1,0 +1,7 @@
+#!/home/utnso/git/tp-2014-1c-alloca2/Programa/Debug/Programa
+
+begin
+
+signal mutexA
+
+end

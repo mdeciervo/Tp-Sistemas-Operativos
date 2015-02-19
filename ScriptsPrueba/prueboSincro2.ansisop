@@ -1,0 +1,17 @@
+function ejecutar
+	wait mutex
+	!Global = !Global - 1
+	l = l + 1
+	textPrint A vale:
+	print A
+	signal mutex
+end
+
+begin
+	
+	Variables l, M
+	l=23
+	M=12
+	!Global = 5
+	ejecutar
+end	

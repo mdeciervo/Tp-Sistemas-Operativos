@@ -1,0 +1,38 @@
+#!/home/utnso/git/tp-2014-1c-alloca2/Programa/Debug/Programa
+function restoGlobal
+variables R
+R = $0 - !Global
+return R
+end
+
+function sumar2
+*$0 = 2 + *$0
+signal mutexB
+variables A
+A = 15
+print A
+textPrint A dentro de funcion
+end
+
+begin
+variables A,j
+textPrint Inicio Programa
+A= 10
+j = 3
+A <- restoGlobal A
+print A
+jnz j Etiqueta
+:Terminar
+textPrint Fin Programa!
+end
+:Etiqueta
+j = j -1 
+io escaner 20
+wait mutexA
+jnz j Etiqueta
+sumar2 &A
+variables L
+L = $A + j
+print L
+jz j Terminar
+end

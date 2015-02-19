@@ -1,0 +1,7 @@
+#!/home/utnso/git/tp-2014-1c-alloca2/Programa/Debug/Programa
+begin
+#un vector de 5 posiciones
+variables a
+	#Imprimi 30 lugares despues de donde se definio a
+	print *&a+300
+end

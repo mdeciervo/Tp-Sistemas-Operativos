@@ -1,0 +1,12 @@
+#!/home/utnso/git/tp-2014-1c-alloca2/Programa/Debug/Programa
+begin	
+	:etiqueta
+
+	wait b
+		!colas = !colas +1
+	signal c
+
+	#Ciclar indefinidamente
+	goto etiqueta
+
+end
